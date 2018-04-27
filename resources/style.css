@@ -1,0 +1,161 @@
+header {
+  display: flex;
+  font: 14px Verdana, sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* logo block */
+.logo {
+  flex: 2 1 150px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: MediumAquamarine;
+  margin: 10px 0;
+}
+.logo span {
+  margin-left: 10px;
+}
+.logo img {
+  margin-left: 20px;
+}
+
+/* navigation */
+nav {
+  display: inline-block;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+nav a {
+  color: black;
+  padding: 0 10px;
+}
+
+/* main content */
+.main, .column, .photo {
+  display: flex;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.main {
+  align-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+}
+.column {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 15px
+}
+
+.column.large {
+  width: 630px;
+  flex-flow: row wrap;
+}
+
+.column.medium {
+  width: 300px;
+  justify-content: flex-start;
+}
+
+.column.small {
+  width: 240px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.story {
+  max-width: 299px;
+}
+.story h2 {
+  margin-top: 0;
+}
+
+/* image divs */
+.photo {
+  display: flex;
+  height: 300px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+.photo h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin: auto;
+}
+
+#story-main {
+  background-image: url("./img-story-main.png");
+  font-size: 40px;
+  text-align: left;
+}
+#story-1 {
+  background-image: url("./img-story-2.png");
+}
+#story-2 {
+  background-image: url("./img-story-3.png");
+}
+#story-3 {
+  background-image: url("./img-story-1.png");
+}
+
+/* news bites - column 3 */
+.links span {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+.links h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  margin-top: 100px;
+}
+footer span:first-child {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding: 0 20px;
+}
+footer span:not(:first-child) {
+  margin-left: 30px;
+}
+footer a {
+  color: black;
+}
